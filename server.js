@@ -14,7 +14,7 @@ var server = http.createServer(function(req, res) {
             time = time.substring(1);
         }
         time = decodeURIComponent(time);
-        if (/^\d{8,}$/.test(time)) {
+        if (/^\d{8,10}$/.test(time)) {
             myDate = moment(time, "X");
         } else {
             myDate = moment(time, "MMMM D, YYYY");
