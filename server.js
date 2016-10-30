@@ -2,7 +2,7 @@ var net = require('net');
 var strftime = require('strftime');
 var express = require('express');
 
-var port = process.argv[2] || 3000;
+var port = process.env.PORT || process.argv[2] || 3000;
 var app = express();
 
 
