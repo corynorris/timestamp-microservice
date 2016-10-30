@@ -8,12 +8,11 @@ var port = process.env.PORT || process.argv[2] || 3000;
 
 app.use(favicon(__dirname + '/public/nodejs.xml'));
 
-
-var server = net.createServer(function(socket) {
-    socket.end(strftime(
+app.get('/', function (req, res) {
+  res.send(strftime(
         "%F %H:%M\n", 
         new Date()
     ));
 });
 
-server.listen(port);
+app.listen(port);
