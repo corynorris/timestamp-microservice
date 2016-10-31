@@ -7,8 +7,8 @@ contains either a unix timestamp or a natural language date (example: January 1,
  3) If it does not contain a date or Unix timestamp, it returns null for those properties.
 
 ### Example Usage
-`https://timestamp-ms.herokuapp.com/December%2015,%202015`  
-`https://timestamp-ms.herokuapp.com/1450137600`  
+`https://limitless-bastion-48149.herokuapp.com/December%2015,%202015`  
+`https://limitless-bastion-48149.herokuapp.com/1450137600`  
 
 ### Example output:
 ```js
